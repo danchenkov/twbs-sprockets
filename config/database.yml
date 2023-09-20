@@ -23,13 +23,15 @@ default: &default
 
 development:
   <<: *default
-  database: twbs_sprockets_development
+  database: twbs_development
+  username: development
+  password: secret
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: twbs_sprockets
+  #username: twbs_test
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +59,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: twbs_sprockets_test
+  database: twbs_test
+  username: development
+  password: secret
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: twbs_sprockets_production
-  username: twbs_sprockets
-  password: <%= ENV["TWBS_SPROCKETS_DATABASE_PASSWORD"] %>
+  database: twbs_production
+  username: twbs
+  password: <%= ENV["TWBS_DATABASE_PASSWORD"] %>
