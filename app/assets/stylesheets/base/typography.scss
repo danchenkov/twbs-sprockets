@@ -1,5 +1,7 @@
-body {
-    p {
-        color: red;
-    }
+p {
+  color: red;
+
+  &.special {
+    color: #2f905d;
+  }
 }
