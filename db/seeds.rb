@@ -6,8 +6,5 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Post.create(
-  title: "First post",
-  body:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit tincidunt iaculis. Suspendisse eleifend lorem tellus, et pellentesque elit pulvinar ac. Mauris nulla tortor, lacinia in dolor a, ullamcorper tristique ligula. Curabitur mollis a urna quis condimentum. Praesent quis nibh odio. Curabitur elementum luctus feugiat. Morbi sit amet laoreet nibh. Nulla libero urna, ullamcorper nec urna ut, semper rhoncus tortor. Nullam et orci quam."
-)
+puts "\n== Seeding the database with fixtures =="
+system("bin/rails db:fixtures:load")

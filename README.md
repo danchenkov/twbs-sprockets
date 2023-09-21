@@ -38,3 +38,21 @@ Importmaps is included. It allows simpler reference providing a name to imported
 There are essentially two libraries to handle Sass files - sassc and Dart Sass. So far I do not know what the advantage is to use Dart Sass.
 See: [https://dev.to/coorasse/rails-7-bootstrap-5-and-importmaps-without-nodejs-4g8]
 
+#### How to re-create Rails instance
+`
+rails new twbs-sprockets -a sprockets -d postgresql -j importmap
+cd twbs-sprockets
+git ci -m "Initial commit"
+cp ../twbs-dart/config/database.yml config
+git add .
+git ci -m "use common database"
+rails g controller about index
+git add .
+git ci -m "add about controller"
+cp ../twbs-dart/app/views/home.html.erb app/views
+cp ../twbs-dart/config/routes.rb config/routes.rb
+git add .
+git ci -m "add home page"
+git add .
+git ci -m "add README"
+`

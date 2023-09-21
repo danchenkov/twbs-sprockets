@@ -1,10 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
 
-<%= render @post %>
+  <p>This is a regular paragraph.</p>
+  <p class="special">This is a special note to test styles.</p>
+  <p>This is a regular paragraph.</p>
 
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
+  <%= render @post %>
 
-  <%= button_to "Destroy this post", @post, method: :delete %>
+  <div>
+    <%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-secondary"  %>
+    <%= link_to "Back to posts", posts_path, class: "btn btn-secondary"  %>
+    <%= link_to "Destroy this post", @post, method: :delete, class: "btn btn-danger"  %>
+  </div>
 </div>
