@@ -1,14 +1,14 @@
 # README
 
+I am trying to choose the most suitable Asset Pipeline for my apps.
+
 This is an approach recommended by Alessandro Rodi, https://dev.to/coorasse/rails-7-bootstrap-5-and-importmaps-without-nodejs-4g8
 
-**Pluspoints**: no foreman, no node, css preprocessing (by sassc) out of the box
-**Benchmark**:
+**Pluspoints**: no foreman, no node, css preprocessing (by sassc) out of the box by sprockets
+**Downsides**: no propshaft
 **Purpose:** least weird
 **Asset pipeline:** sprockets, importmaps
 **Technologies:** bootstrap from gem (with customizable sass settings)
-
-I am trying to choose the best of at least approproate Asset Pipeline for my apps.
 
 The project is using Bootstrap 5, not so much for styles and perks, but mainly because it illustrates the use of external library with JS and CSS components. JS part has dependency on popper.js and CSS part has optional config for Sass.
 

@@ -4,10 +4,10 @@ export default class extends Controller {
   static targets = ["message", "name"]
 
   connect() {
-    console.log("Connect")
+    // console.log("Connect")
   }
 
-  click(newText) {
+  click() {
     this.messageTarget.textContent = "Hello, " + (this.nameTarget.value || "world") + "!"
   }
 }

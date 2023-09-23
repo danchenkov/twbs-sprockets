@@ -12,6 +12,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 user =
   User.first_or_create(
+    name: "Alexei",
     email: "alexei@example.com",
     password: "password",
     password_confirmation: "password"
