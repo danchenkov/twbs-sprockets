@@ -10,9 +10,7 @@ import "bootstrap"
 document.addEventListener("turbo:load", function () {
 	const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 	const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-	// const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-	// const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-	// popoverList
+	popoverList
 	// let frame = document.getElementById("messagesFrame");
 	// if (frame.complete) {
 	//  frame.scrollTo(0, frame.scrollHeight)
