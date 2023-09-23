@@ -1,8 +1,9 @@
 body {
-  // background-image: linear-gradient(#0604a688, #fff8);
+  background-image: linear-gradient(#06e6f644, #fff0);
   // background-image: url("bg-starline.gif"); // We are using Propshaft
-  background-image: image_url("bg-starline.gif"); // We are using Sprockets
-  background-size: cover;
+  // background-image: image_url("bg-starline.gif"); // We are using Sprockets
+  // background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
