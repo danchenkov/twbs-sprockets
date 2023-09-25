@@ -9,5 +9,7 @@ Rails.application.config.assets.version = "1.0"
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-# Rails.application.config.assets.precompile += %w( bootstrap.css )
-## Not clear why this is needed, it precompiles without it as well
+
+# Rails.application.config.assets.precompile += %w[bootstrap.min.js popper.js]
+# AD: bootstrap.js and popper.js can be included either here or in manifest.js
+# AD: bootstrap.css is compiled because its css file is included in manifest.js as link_tree

@@ -102,7 +102,7 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     execjs (2.9.1)
-    ffi (1.15.5)
+    ffi (1.16.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -245,6 +245,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  autoprefixer-rails (~> 10.4)
   bootsnap
   bootstrap (~> 5.3)
   capybara
@@ -256,7 +257,7 @@ DEPENDENCIES
   puma (~> 6.0)
   rails (~> 7.0.8)
   redis (~> 4.0)
-  sassc-rails
+  sassc-rails (~> 2.1)
   selenium-webdriver
   sprockets-rails
   stimulus-rails

@@ -35,7 +35,7 @@ form {
   color: $body-text-color;
 
   &:hover {
-    color: color.adjust($color: $body-text-color, $lightness: 15%);
+    color: lighten($color: $body-text-color, $amount: 15%);
 
     h2 {
       text-decoration: underline
